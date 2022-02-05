@@ -6,14 +6,14 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 15:46:23 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/05 19:33:49 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/05 23:12:33 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush03.c"
+void	rush(int x, int y);
 
 int	main(void)
 {
-	rectangle(1,1);
+	rush(-1, -1);
 	return (0);
 }
