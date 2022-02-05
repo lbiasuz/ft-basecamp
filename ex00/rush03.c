@@ -6,15 +6,12 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:51:15 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/05 23:10:49 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/05 23:18:03 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-// Insere caractere de acordo com o ponto do plano
-// Recebe uma cordenada x, y: o ponto no plano
-// E o tamanho total do retângulo
 void	select_char(int x, int y, int width, int height)
 {
 	if (y == 1 || y == height)
@@ -42,10 +39,6 @@ void	select_char(int x, int y, int width, int height)
 	}
 }
 
-/*
-	Função principal, recebe largura e altura de retângulo e
-	e percorre plano linha a linha, coluna a coluna.
-*/
 void	rush(int x, int y)
 {
 	int	i;
