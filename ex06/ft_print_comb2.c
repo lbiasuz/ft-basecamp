@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 19:34:22 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/05 14:31:25 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/05 17:32:22 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,16 +51,10 @@ char	*create_vector(char *x, char *v1, char *v2)
 
 void	ft_loop(char *v1, char *v2)
 {
-	int i;
-	int c;
-	char x[7];
-	
-	i = 99;
-	while (i > 0)
-	{
-		c = c + i;
-		i--;
-	}
+	int		c;
+	char	x[7];
+
+	c = (99 * 100) / 2;
 	while (c > 0)
 	{
 		sum_vector(v2);
@@ -88,7 +82,7 @@ void	ft_print_comb2(void)
 	ft_loop(&v1[0], &v2[0]);
 }
 
-int main(void)
+int	main(void)
 {
 	ft_print_comb2();
 	return (0);
