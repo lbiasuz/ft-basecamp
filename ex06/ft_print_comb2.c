@@ -6,13 +6,11 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 19:34:22 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/05 17:32:22 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:40:24 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-//2 vetores: v1, v2
 
 void	sum_vector(char *v)
 {
@@ -80,10 +78,4 @@ void	ft_print_comb2(void)
 	v2[0] = '0';
 	v2[1] = '0';
 	ft_loop(&v1[0], &v2[0]);
-}
-
-int	main(void)
-{
-	ft_print_comb2();
-	return (0);
 }
