@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 13:33:54 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/06 18:58:32 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/06 19:01:41 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,4 @@ void	ft_print_combn(int n)
 		arr[index - 1] = (char) index + 48;
 	arr[index - 1] = (char) 0;
 	sum_char(index - 2, n, &arr[0]);
-}
-
-int	main(void)
-{
-	ft_print_combn(3);
-	return (0);
 }
