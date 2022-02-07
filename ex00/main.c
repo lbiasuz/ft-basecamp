@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lqualtie <laisqualtieri0@gmail.com>        +#+  +:+       +#+        */
+/*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 15:46:23 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/06 17:21:10 by lqualtie         ###   ########.fr       */
+/*   Updated: 2022/02/07 01:51:51 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(5, 5);
+	rush(8, 8);
 	return (0);
 }
