@@ -1,0 +1,2 @@
+#!/bin/sh
+cat /etc/passwd | sed 's/:.*//g' | rev | sort -r | sed G | sed '2d' | sed $(echo '$FT_LINE1,$FT_LINE2!d' | envsubst ) | sed '/^$/d;s/\n/, /g' |  tr -s '\n' ',' | sed 's/,/, /g' | sed 's/,.$/./'

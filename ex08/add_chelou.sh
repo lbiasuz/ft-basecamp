@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "obase=13;ibase=5;"$(echo $FT_NBR1 | envsubst | sed -e "s/'/0/g;" -e 's/\\/1/g;' -e 's/\"/2/g;' -e 's/?/3/g;' -e 's/!/4/g;')+$(echo "$FT_NBR2" | envsubst | tr "mrdoc" "01234") | bc | tr '0123456789ABC' 'gtaio luSnemf'
