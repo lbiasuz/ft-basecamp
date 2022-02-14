@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   functions.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: grino <grino@student.42sp.org.br>          +#+  +:+       +#+        */
+/*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 22:53:51 by grino             #+#    #+#             */
-/*   Updated: 2022/02/13 23:36:56 by grino            ###   ########.fr       */
+/*   Updated: 2022/02/14 02:26:52 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include "functions.h"
 #include "input.h"
 #include "vector.h"
