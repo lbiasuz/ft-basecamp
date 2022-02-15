@@ -1,17 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/15 21:32:37 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/15 23:39:16 by lbiasuz          ###   ########.fr       */
+/*   Created: 2022/02/15 23:36:49 by lbiasuz           #+#    #+#             */
+/*   Updated: 2022/02/15 23:39:03 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putstr(char *str)
+#include <unistd.h>
+
+void	ft_putnbr(int nb)
 {
-	while (*str != '\0')
-		write(1, str, 1);
+	int		index;
+	int		sign;
+	char	arr[11];
+
+	index = 0;
+	sign = 1;
+	if (nb < 0)
+		sign = -1;
+	while (index < 10)
+	{
+		arr[index] = (char)((nb % 10) * sign) + 48;
+		nb = nb / 10;
+		if (nb == 0)
+			break ;
+		index++;
+	}
+	if (sign < 0)
+		write(1, "-", 1);
+	while (index >= 0)
+	{
+		write(1, &arr[index], 1);
+		index--;
+	}
 }
