@@ -6,16 +6,16 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 19:44:00 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/15 14:14:35 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/15 14:18:55 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while ((s1[i] != '\0' || s2[i] != '\0') && i < (int) n)
+	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
