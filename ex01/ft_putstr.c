@@ -6,12 +6,15 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 21:32:37 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/15 23:39:16 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/16 17:51:17 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putstr(char *str)
 {
 	while (*str != '\0')
+	{
 		write(1, str, 1);
+		str++;
+	}
 }
