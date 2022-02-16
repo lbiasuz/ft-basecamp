@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:30:06 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/15 21:04:29 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/16 17:35:04 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while (*str)
+	while (str[i])
 		i++;
 	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 13:18:00 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/16 16:03:34 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/16 16:04:22 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	ft_atoi_base(char *str, char *base)
 	ac = 0;
 	sign = 1;
 	base_size = ft_strlen(base);
-	if (!ft_check_base)
+	if (!ft_check_base(base))
 		return (0);
 	while (*str == '-' || *str == '+' || *str == ' ')
 	{
