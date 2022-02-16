@@ -6,9 +6,11 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 21:32:37 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/16 17:51:17 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/16 18:05:58 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putstr(char *str)
 {
