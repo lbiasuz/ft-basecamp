@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:49:23 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/17 19:04:12 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/17 19:17:02 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-int	ft_print_params(int argc, char *argv[])
+void	ft_print_params(int argc, char *argv[])
 {
 	int	i;
 
