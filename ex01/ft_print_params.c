@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                           :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 12:20:25 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/17 13:08:14 by lbiasuz          ###   ########.fr       */
+/*   Created: 2022/02/17 15:44:22 by lbiasuz           #+#    #+#             */
+/*   Updated: 2022/02/17 17:26:33 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 int	main(int argc, char *argv[])
 {
-	if (argc == 1)
+	int	i;
+
+	i = 1;
+	while (i < argc)
 	{
-		while (argv[0][0])
+		while (argv[i][0] != '\0')
 		{
-			write(1, argv[0], 1);
-			argv[0]++;
+			write(1, argv[i], 1);
+			argv[i]++;
 		}
+		write(1, "\n", 1);
+		i++;
 	}
 }
