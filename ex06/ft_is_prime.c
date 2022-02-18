@@ -6,13 +6,14 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 14:24:10 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/18 16:09:07 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/18 16:12:06 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb)
 {
-	int i;
+	int	i;
+
 	if (nb == 2 || nb == 3)
 		return (1);
 	if (nb == 0 || nb == 1 || nb % 2 == 0 || nb % 3 == 0)
@@ -22,7 +23,7 @@ int	ft_is_prime(int nb)
 	i = 3;
 	while (i < 46340 && (i * i) <= nb)
 	{
-		if ( !(nb % i) || !(nb % (i + 2)) || !(nb % (i + 4)) || !(nb % (i + 6)))
+		if (!(nb % i) || !(nb % (i + 2)) || !(nb % (i + 4)) || !(nb % (i + 6)))
 			return (0);
 		i += 8;
 	}
