@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 00:26:46 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/16 01:33:30 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/17 23:08:31 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@ int	ft_atoi(char *str)
 
 	ac = 0;
 	sign = 1;
-	while (*str == ' ')
+	while
+	(
+		*str == ' ' || *str == '\t' || *str == '\r' ||
+		*str == '\v' || *str == '\n' || *str == '\f'
+	)
 		str++;
 	while (*str == '-' || *str == '+')
 	{
@@ -25,9 +29,9 @@ int	ft_atoi(char *str)
 			sign *= -1;
 		str++;
 	}
-	while (*str >= '0' && *str <= '9')
+	while (*str >= '0' && *str <= '9') // str "76944" => 76944 
 	{
-		ac = ac * 10 + (*str - '0');
+		ac = ac * 10 + (*str - 48);
 		str++;
 	}
 	return (ac * sign);
