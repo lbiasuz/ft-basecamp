@@ -1,0 +1,1 @@
+git log | grep -E '[0-9a-f]{40}'| sed 's/commit //g' | head -n 5
