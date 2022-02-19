@@ -6,7 +6,7 @@
 /*   By: lbiasuz <lbiasuz@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 20:36:43 by lbiasuz           #+#    #+#             */
-/*   Updated: 2022/02/19 00:57:07 by lbiasuz          ###   ########.fr       */
+/*   Updated: 2022/02/19 12:35:44 by lbiasuz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-char *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
 	char	*p;
 
